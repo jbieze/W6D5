@@ -15,7 +15,10 @@ class Clock extends React.Component {
 
   render () {
     return (
-      <h1>The time is {this.state.date.toTimeString()}</h1>
+      <div id="date-and-time">
+        <h1>The time is {this.state.date.toTimeString()}</h1>
+        <h1>The date is {this.state.date.toDateString()}</h1>
+      </div>
     );
   }
 
